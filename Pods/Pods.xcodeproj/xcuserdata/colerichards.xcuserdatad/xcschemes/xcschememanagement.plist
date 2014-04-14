@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-StarterKit-iOS-AFNetworking.xcscheme</key>
+		<key>Pods-ROXIMITYSDKStarterKit-iOS-AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-StarterKit-iOS.xcscheme</key>
+		<key>Pods-ROXIMITYSDKStarterKit-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,22 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11BC44E897A1454EBC1F6015</key>
+		<key>8140E87C731D464192237276</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>677B69A2560942B1A8474C1D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F26CE787C5404DAD9231D285</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FEED6D0BE64D41A6BDD9D999</key>
+		<key>D2E6725D3F484E849FFDD55C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

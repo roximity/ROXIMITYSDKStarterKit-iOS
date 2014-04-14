@@ -1,0 +1,29 @@
+# the build
+build
+dist
+
+# temp nibs and swap files
+*~.nib
+*.swp
+*.back
+
+# OS X folder attributes
+.DS_Store
+profile
+.Spotlight-V100
+.VolumeIcon.icns
+
+# user-specific XCode stuff
+*.mode1v3
+*.mode2v3
+*.pbxuser
+*.perspectivev3
+*.orig
+xcuserdata
+ROXDOX/
+
+# Pods
+Pods/
+
+#ignore bundle
+ROXIMITYlibSample/ROXIMITYlibSample/ROXIMITYlib.bundle

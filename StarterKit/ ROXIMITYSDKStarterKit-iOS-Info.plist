@@ -24,8 +24,6 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>ROXIMITYApplicationId</key>
-	<string>0b40217a3eab479bbfc5dac7a925e1eb</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>bluetooth-central</string>

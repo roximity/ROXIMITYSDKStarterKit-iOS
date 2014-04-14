@@ -79,7 +79,7 @@
 
 //TODO: cole the roximity engine should accept a UILocalNotification for this method
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
-    [ROXIMITYEngine didReceiveLocalNotification:application userInfo:notification.userInfo];
+    [ROXIMITYEngine didReceiveLocalNotification:application notification:(UILocalNotification *)notification];
 }
 
 @end
