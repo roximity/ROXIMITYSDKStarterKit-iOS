@@ -71,13 +71,13 @@
 		73D7F53518EC6F5C00599A7B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		73D7F53718EC6F6F00599A7B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		73D7F53E18EC7FD900599A7B /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = roximity.caf; path = ../roximity.caf; sourceTree = "<group>"; };
-		73D7F53F18EC7FD900599A7B /* ROXIMITYlib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYlib.bundle; sourceTree = "<group>"; };
+		73D7F53F18EC7FD900599A7B /* ROXIMITYlib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ROXIMITYlib.bundle; path = ../ROXIMITYlib.bundle; sourceTree = "<group>"; };
 		73D7F54118EC7FD900599A7B /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
 		73D7F54218EC7FD900599A7B /* ROXIMITYlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYlib.h; sourceTree = "<group>"; };
 		73D7F54318EC7FD900599A7B /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
 		73D7F54B18EC984600599A7B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		73D7F54D18EC987F00599A7B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		73D7F5AC18EE22C000599A7B /* libROXIMITYlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYlib.a; sourceTree = "<group>"; };
+		73D7F5AC18EE22C000599A7B /* libROXIMITYlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libROXIMITYlib.a; path = ../libROXIMITYlib.a; sourceTree = "<group>"; };
 		C3AB14978E5F465EB06B6F7E /* Pods-StarterKit-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterKit-iOS.xcconfig"; path = "Pods/Pods-StarterKit-iOS.xcconfig"; sourceTree = "<group>"; };
 		DF999EACB14A4F4388CDEEAE /* Pods-StarterKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterKit.xcconfig"; path = "Pods/Pods-StarterKit.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,11 +139,8 @@
 		73D7F4F518EC6C2F00599A7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				73D7F5AC18EE22C000599A7B /* libROXIMITYlib.a */,
 				73D7F54D18EC987F00599A7B /* MessageUI.framework */,
 				73D7F54B18EC984600599A7B /* CoreBluetooth.framework */,
-				73D7F53F18EC7FD900599A7B /* ROXIMITYlib.bundle */,
-				73D7F54018EC7FD900599A7B /* ROXIMITYlibHeaders */,
 				73D7F53718EC6F6F00599A7B /* SystemConfiguration.framework */,
 				73D7F53518EC6F5C00599A7B /* AdSupport.framework */,
 				73D7F53318EC6F4B00599A7B /* CFNetwork.framework */,
@@ -176,7 +173,10 @@
 		73D7F4FD18EC6C2F00599A7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				73D7F5AC18EE22C000599A7B /* libROXIMITYlib.a */,
 				73D7F53E18EC7FD900599A7B /* roximity.caf */,
+				73D7F53F18EC7FD900599A7B /* ROXIMITYlib.bundle */,
+				73D7F54018EC7FD900599A7B /* ROXIMITYlibHeaders */,
 				73D7F4FE18EC6C2F00599A7B /*  ROXIMITYSDKStarterKit-iOS-Info.plist */,
 				73D7F4FF18EC6C2F00599A7B /* InfoPlist.strings */,
 				73D7F50218EC6C2F00599A7B /* main.m */,
@@ -210,7 +210,8 @@
 				73D7F54218EC7FD900599A7B /* ROXIMITYlib.h */,
 				73D7F54318EC7FD900599A7B /* ROXNotifications.h */,
 			);
-			path = ROXIMITYlibHeaders;
+			name = ROXIMITYlibHeaders;
+			path = ../ROXIMITYlibHeaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
