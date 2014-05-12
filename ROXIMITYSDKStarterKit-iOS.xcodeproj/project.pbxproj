@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D290D79A7EC4ED3B83FA35A /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C1ECD0D49748D4B6BDF4E2 /* libPods-ROXIMITYSDKStarterKit-iOS.a */; };
-		7315E46B18FC85730026CCC7 /* libROXIMITYlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7315E46418FC85730026CCC7 /* libROXIMITYlib.a */; };
+		1DEB42F419216657001C7F7F /* libROXIMITYlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DEB42F319216657001C7F7F /* libROXIMITYlib.a */; };
+		1DEB42F6192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DEB42F5192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a */; };
 		7315E46C18FC85730026CCC7 /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7315E46518FC85730026CCC7 /* roximity.caf */; };
 		7315E46D18FC85730026CCC7 /* ROXIMITYlib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7315E46A18FC85730026CCC7 /* ROXIMITYlib.bundle */; };
 		73D7F4F718EC6C2F00599A7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4F618EC6C2F00599A7B /* Foundation.framework */; };
@@ -45,8 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DEB42F319216657001C7F7F /* libROXIMITYlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYlib.a; sourceTree = "<group>"; };
+		1DEB42F5192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ROXIMITYSDKStarterKit-iOS.a"; path = "Pods/build/Debug-iphoneos/libPods-ROXIMITYSDKStarterKit-iOS.a"; sourceTree = "<group>"; };
 		3610231B32E4426888079BE7 /* libPods-StarterKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarterKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7315E46418FC85730026CCC7 /* libROXIMITYlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYlib.a; sourceTree = "<group>"; };
 		7315E46518FC85730026CCC7 /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
 		7315E46718FC85730026CCC7 /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
 		7315E46818FC85730026CCC7 /* ROXIMITYlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYlib.h; sourceTree = "<group>"; };
@@ -89,18 +90,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7315E46B18FC85730026CCC7 /* libROXIMITYlib.a in Frameworks */,
+				1DEB42F6192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */,
 				73D7F54E18EC987F00599A7B /* MessageUI.framework in Frameworks */,
 				73D7F54C18EC984600599A7B /* CoreBluetooth.framework in Frameworks */,
 				73D7F53818EC6F6F00599A7B /* SystemConfiguration.framework in Frameworks */,
 				73D7F53618EC6F5C00599A7B /* AdSupport.framework in Frameworks */,
 				73D7F4F718EC6C2F00599A7B /* Foundation.framework in Frameworks */,
 				73D7F53418EC6F4B00599A7B /* CFNetwork.framework in Frameworks */,
+				1DEB42F419216657001C7F7F /* libROXIMITYlib.a in Frameworks */,
 				73D7F53218EC6F4100599A7B /* CoreLocation.framework in Frameworks */,
 				73D7F53018EC6EB600599A7B /* CoreTelephony.framework in Frameworks */,
 				73D7F4F918EC6C2F00599A7B /* CoreGraphics.framework in Frameworks */,
 				73D7F4FB18EC6C2F00599A7B /* UIKit.framework in Frameworks */,
-				0D290D79A7EC4ED3B83FA35A /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +153,7 @@
 		73D7F4F518EC6C2F00599A7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DEB42F5192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a */,
 				73D7F54D18EC987F00599A7B /* MessageUI.framework */,
 				73D7F54B18EC984600599A7B /* CoreBluetooth.framework */,
 				73D7F53718EC6F6F00599A7B /* SystemConfiguration.framework */,
@@ -187,7 +189,7 @@
 		73D7F4FD18EC6C2F00599A7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7315E46418FC85730026CCC7 /* libROXIMITYlib.a */,
+				1DEB42F319216657001C7F7F /* libROXIMITYlib.a */,
 				7315E46518FC85730026CCC7 /* roximity.caf */,
 				7315E46618FC85730026CCC7 /* ROXIMITYlib */,
 				7315E46A18FC85730026CCC7 /* ROXIMITYlib.bundle */,
@@ -495,8 +497,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					/Users/colerichards/Downloads/60,
-					2,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StarterKit/ ROXIMITYSDKStarterKit-iOS-Prefix.pch";
@@ -505,6 +505,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/StarterKit",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = " ROXIMITYSDKStarterKit-iOS";
@@ -521,8 +522,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					/Users/colerichards/Downloads/60,
-					2,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StarterKit/ ROXIMITYSDKStarterKit-iOS-Prefix.pch";
@@ -531,6 +530,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/StarterKit",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = " ROXIMITYSDKStarterKit-iOS";
