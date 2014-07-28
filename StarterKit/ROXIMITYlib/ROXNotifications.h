@@ -13,13 +13,43 @@
 
 @interface ROXNotifications : NSObject
 
+#pragma mark - Engine Options
+
 extern NSString * const kROXEngineOptionsReservedRegions;
+extern NSString * const kROXEngineOptionsMuteBluetoothOffAlert;
+extern NSString * const kROXEngineOptionsMuteRequestAlerts;
+extern NSString * const kROXEngineOptionsStartLocationDeactivated;
+
+#pragma mark - Notification Observer Constants
 
 extern NSString * const kROXDeviceStateNotification;
 extern NSString * const kROXRoximityLocalNotification;
-extern NSString * const kROXRoximityRemoteNotification;
+extern NSString * const kROXRoximityPushNotification;
+extern NSString * const kROXRoximityActionNotification;
 extern NSString * const kROXRoximityTriggerNotification;
-extern NSString * const kROXRoximityTriggeredBeaconNotification;
+extern NSString * const kROXBeaconRangeUpdated;
+extern NSString * const kROXMessageFired;
+extern NSString * const kROXWebhookPosted;
+extern NSString * const kROXGeofenceAdded;
+extern NSString * const kROXAliasSetSuccess;
+extern NSString * const kROXAliasSetFailure;
+
+#pragma mark - Notification Keys
+
+extern NSString * const kROXNotifBeaconId;
+extern NSString * const kROXNotifBeaconName;
+extern NSString * const kROXNotifBeaconTags;
+extern NSString * const kROXNotifBeaconProximityValue;
+extern NSString * const kROXNotifBeaconProximityString;
+
+extern NSString * const kROXNotifGeoRegionId;
+extern NSString * const kROXNotifGeoRegionLat;
+extern NSString * const kROXNotifGeoRegionLon;
+extern NSString * const kROXNotifGeoRegionRadius;
+extern NSString * const kROXNotifGeoRegionName;
+extern NSString * const kROXNotifGeoRegionTags;
+
+#pragma mark - Legacy
 
 extern NSString * const ROX_NOTIF_BEACON_RANGE_UPDATE;
 extern NSString * const ROX_NOTIF_REGION_ENTERED;

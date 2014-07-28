@@ -76,6 +76,9 @@
 // Location Items
 +(CLLocation *) getMostRecentLocation;
 +(void) updateLocationNow;
++(void) deactivateLocation;
++(void) reactivateLocation;
++(BOOL) isLocationDeactivated;
 
 //+(BOOL) engineCheckPassed;
 
