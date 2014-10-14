@@ -16,7 +16,7 @@
     // Override point for customization after application launch.
     
     //Starting the ROXIMITY Engine!
-    [ROXIMITYEngine startWithLaunchOptions:launchOptions engineOptions:nil andApplicationId:@"ENTER_YOUR_ROXIMITY_APPLICATION_ID"];
+    [ROXIMITYEngine startWithLaunchOptions:launchOptions engineOptions:nil andApplicationId:@"13b783f44da04a8c82fda1738f3a79c0"];//@"ENTER_YOUR_ROXIMITY_APPLICATION_ID"];
     
     return YES;
 }
