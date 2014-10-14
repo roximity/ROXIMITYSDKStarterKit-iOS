@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		738E595519ED7C0500775D7D /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 738E594D19ED7C0500775D7D /* libROXIMITYSDK.a */; };
-		738E595619ED7C0500775D7D /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 738E594E19ED7C0500775D7D /* roximity.caf */; };
-		738E595719ED7C0500775D7D /* ROXIMITYlib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 738E595419ED7C0500775D7D /* ROXIMITYlib.bundle */; };
+		736B6F0419EDA5900076D20F /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 736B6EFC19EDA5900076D20F /* libROXIMITYSDK.a */; };
+		736B6F0519EDA5900076D20F /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 736B6EFD19EDA5900076D20F /* roximity.caf */; };
+		736B6F0619EDA5900076D20F /* ROXIMITYSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 736B6F0319EDA5900076D20F /* ROXIMITYSDK.bundle */; };
 		73D7F4F718EC6C2F00599A7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4F618EC6C2F00599A7B /* Foundation.framework */; };
 		73D7F4F918EC6C2F00599A7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4F818EC6C2F00599A7B /* CoreGraphics.framework */; };
 		73D7F4FB18EC6C2F00599A7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4FA18EC6C2F00599A7B /* UIKit.framework */; };
@@ -30,7 +30,6 @@
 		73D7F53818EC6F6F00599A7B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F53718EC6F6F00599A7B /* SystemConfiguration.framework */; };
 		73D7F54C18EC984600599A7B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F54B18EC984600599A7B /* CoreBluetooth.framework */; };
 		73D7F54E18EC987F00599A7B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F54D18EC987F00599A7B /* MessageUI.framework */; };
-		AB85896A6E71D65F7D08B7B0 /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C1ECD0D49748D4B6BDF4E2 /* libPods-ROXIMITYSDKStarterKit-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,13 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		738E594D19ED7C0500775D7D /* libROXIMITYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYSDK.a; sourceTree = "<group>"; };
-		738E594E19ED7C0500775D7D /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
-		738E595019ED7C0500775D7D /* ROXBeaconRangeUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXBeaconRangeUpdateDelegate.h; sourceTree = "<group>"; };
-		738E595119ED7C0500775D7D /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
-		738E595219ED7C0500775D7D /* ROXIMITYlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYlib.h; sourceTree = "<group>"; };
-		738E595319ED7C0500775D7D /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
-		738E595419ED7C0500775D7D /* ROXIMITYlib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYlib.bundle; sourceTree = "<group>"; };
+		736B6EFC19EDA5900076D20F /* libROXIMITYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYSDK.a; sourceTree = "<group>"; };
+		736B6EFD19EDA5900076D20F /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
+		736B6EFF19EDA5900076D20F /* ROXBeaconRangeUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXBeaconRangeUpdateDelegate.h; sourceTree = "<group>"; };
+		736B6F0019EDA5900076D20F /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
+		736B6F0119EDA5900076D20F /* ROXIMITYlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYlib.h; sourceTree = "<group>"; };
+		736B6F0219EDA5900076D20F /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
+		736B6F0319EDA5900076D20F /* ROXIMITYSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYSDK.bundle; sourceTree = "<group>"; };
 		73D7F4F318EC6C2F00599A7B /*  ROXIMITYSDKStarterKit-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " ROXIMITYSDKStarterKit-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7F4F618EC6C2F00599A7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		73D7F4F818EC6C2F00599A7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,8 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				738E595519ED7C0500775D7D /* libROXIMITYSDK.a in Frameworks */,
 				73D7F54E18EC987F00599A7B /* MessageUI.framework in Frameworks */,
+				736B6F0419EDA5900076D20F /* libROXIMITYSDK.a in Frameworks */,
 				73D7F54C18EC984600599A7B /* CoreBluetooth.framework in Frameworks */,
 				73D7F53818EC6F6F00599A7B /* SystemConfiguration.framework in Frameworks */,
 				73D7F53618EC6F5C00599A7B /* AdSupport.framework in Frameworks */,
@@ -97,7 +96,6 @@
 				73D7F53018EC6EB600599A7B /* CoreTelephony.framework in Frameworks */,
 				73D7F4F918EC6C2F00599A7B /* CoreGraphics.framework in Frameworks */,
 				73D7F4FB18EC6C2F00599A7B /* UIKit.framework in Frameworks */,
-				AB85896A6E71D65F7D08B7B0 /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,13 +120,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		738E594F19ED7C0500775D7D /* ROXIMITYSDK */ = {
+		736B6EFE19EDA5900076D20F /* ROXIMITYSDK */ = {
 			isa = PBXGroup;
 			children = (
-				738E595019ED7C0500775D7D /* ROXBeaconRangeUpdateDelegate.h */,
-				738E595119ED7C0500775D7D /* ROXIMITYEngine.h */,
-				738E595219ED7C0500775D7D /* ROXIMITYlib.h */,
-				738E595319ED7C0500775D7D /* ROXNotifications.h */,
+				736B6EFF19EDA5900076D20F /* ROXBeaconRangeUpdateDelegate.h */,
+				736B6F0019EDA5900076D20F /* ROXIMITYEngine.h */,
+				736B6F0119EDA5900076D20F /* ROXIMITYlib.h */,
+				736B6F0219EDA5900076D20F /* ROXNotifications.h */,
 			);
 			path = ROXIMITYSDK;
 			sourceTree = "<group>";
@@ -189,10 +187,10 @@
 		73D7F4FD18EC6C2F00599A7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				738E594D19ED7C0500775D7D /* libROXIMITYSDK.a */,
-				738E594E19ED7C0500775D7D /* roximity.caf */,
-				738E594F19ED7C0500775D7D /* ROXIMITYSDK */,
-				738E595419ED7C0500775D7D /* ROXIMITYlib.bundle */,
+				736B6EFC19EDA5900076D20F /* libROXIMITYSDK.a */,
+				736B6EFD19EDA5900076D20F /* roximity.caf */,
+				736B6EFE19EDA5900076D20F /* ROXIMITYSDK */,
+				736B6F0319EDA5900076D20F /* ROXIMITYSDK.bundle */,
 				73D7F4FE18EC6C2F00599A7B /*  ROXIMITYSDKStarterKit-iOS-Info.plist */,
 				73D7F4FF18EC6C2F00599A7B /* InfoPlist.strings */,
 				73D7F50218EC6C2F00599A7B /* main.m */,
@@ -305,9 +303,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				738E595719ED7C0500775D7D /* ROXIMITYlib.bundle in Resources */,
+				736B6F0619EDA5900076D20F /* ROXIMITYSDK.bundle in Resources */,
 				73D7F50F18EC6C2F00599A7B /* Images.xcassets in Resources */,
-				738E595619ED7C0500775D7D /* roximity.caf in Resources */,
+				736B6F0519EDA5900076D20F /* roximity.caf in Resources */,
 				73D7F50118EC6C2F00599A7B /* InfoPlist.strings in Resources */,
 				73D7F50A18EC6C2F00599A7B /* Main.storyboard in Resources */,
 			);
