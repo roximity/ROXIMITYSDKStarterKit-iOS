@@ -20,10 +20,8 @@ profile
 *.perspectivev3
 *.orig
 xcuserdata
-ROXDOX/
 
 # Pods
 Pods/
+Podfile.lock
 
-#ignore bundle
-ROXIMITYlibSample/ROXIMITYlibSample/ROXIMITYlib.bundle
