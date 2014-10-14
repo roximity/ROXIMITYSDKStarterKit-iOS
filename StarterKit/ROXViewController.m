@@ -20,25 +20,46 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    //This notification listener calls the receivedStatusNotification method every time beacon status is updated.
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(receivedStatusNotification:)
-                                                 name:ROX_NOTIF_BEACON_RANGE_UPDATE
-                                               object:nil];
+    
+    //Establish this viewcontroller as the delegate for beacon range update callbacks
+    [ROXIMITYEngine setBeaconRangeDelegate:self withUpdateInterval:kROXBeaconRangeUpdatesFastest];
+    
+    //Establish this viewcontroller as the delegate or ROXIMITY engine callbacks
+    [ROXIMITYEngine setROXIMITYEngineDelegate:self];
 
+    //Example of setting a user alias in ROXIMITY SDK
+    [ROXIMITYEngine setAlias:@"ROXStarterKit user"];
 }
 
--(void)receivedStatusNotification:(NSNotification *)notification{
-    NSDictionary *userInfo = notification.userInfo;
-    NSLog(@"This is the basic information from your beacons: \n %@", userInfo);
+//ROXIMITY Beacon Delegate Methods
+- (void) didUpdateBeaconRanges:(NSArray *)rangedBeacons{
+    if ([rangedBeacons count] == 0){
+        return;
+    }else{
+        NSLog(@"ROXIMITY found the following beacons: \n%@", rangedBeacons);
+    }
+}
+
+
+//ROXIMITY Engine Delegate methods
+-(void) bluetoothStateChange:(BOOL)bluetoothOn{
+    NSLog(@"Bluetooth capabilities are %@", bluetoothOn ? @"ON" : @"OFF");
+}
+
+-(void) aliasSetResult:(BOOL)success alias:(NSString *)alias error:(NSError *)error{
+    if (success){
+        NSLog(@"Alias has been set to: %@", [ROXIMITYEngine getAlias]);
+    }else{
+        NSLog(@"There was an error setting the alias: %@", error);
+    }
+}
+
+-(void) aliasRemoveResult:(BOOL)success error:(NSError *)error{
     
-    //To access the information about beacons inside the notification dictionary use the following beacon constants.
-    for (NSString *beaconKey in userInfo){
-        NSDictionary *beaconDict = [userInfo objectForKey:beaconKey];
-        NSLog(@"Beacon Name: %@", [beaconDict objectForKey:ROX_BEACON_RANGE_KEY_BEACON_NAME]);
-        NSLog(@"Beacon Tags: %@", [beaconDict objectForKey:ROX_BEACON_RANGE_KEY_BEACON_TAGS]);
-        NSLog(@"Beacon Proximity String: %@", [beaconDict objectForKey:ROX_BEACON_RANGE_KEY_PROXIMITY_STRING]);
-        NSLog(@"Beacon Proximity Value: %@", [beaconDict objectForKey:ROX_BEACON_RANGE_KEY_PROXIMITY_VALUE]);
+    if (success){
+        NSLog(@"Alias has been removed");
+    }else{
+        NSLog(@"There was an error removing the alias: %@", error);
     }
 }
 

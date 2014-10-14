@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1DEB42F419216657001C7F7F /* libROXIMITYlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DEB42F319216657001C7F7F /* libROXIMITYlib.a */; };
-		1DEB42F6192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DEB42F5192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a */; };
-		7315E46C18FC85730026CCC7 /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7315E46518FC85730026CCC7 /* roximity.caf */; };
-		7315E46D18FC85730026CCC7 /* ROXIMITYlib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7315E46A18FC85730026CCC7 /* ROXIMITYlib.bundle */; };
+		738E595519ED7C0500775D7D /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 738E594D19ED7C0500775D7D /* libROXIMITYSDK.a */; };
+		738E595619ED7C0500775D7D /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 738E594E19ED7C0500775D7D /* roximity.caf */; };
+		738E595719ED7C0500775D7D /* ROXIMITYlib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 738E595419ED7C0500775D7D /* ROXIMITYlib.bundle */; };
 		73D7F4F718EC6C2F00599A7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4F618EC6C2F00599A7B /* Foundation.framework */; };
 		73D7F4F918EC6C2F00599A7B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4F818EC6C2F00599A7B /* CoreGraphics.framework */; };
 		73D7F4FB18EC6C2F00599A7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4FA18EC6C2F00599A7B /* UIKit.framework */; };
@@ -20,7 +19,6 @@
 		73D7F50A18EC6C2F00599A7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D7F50818EC6C2F00599A7B /* Main.storyboard */; };
 		73D7F50D18EC6C2F00599A7B /* ROXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D7F50C18EC6C2F00599A7B /* ROXViewController.m */; };
 		73D7F50F18EC6C2F00599A7B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D7F50E18EC6C2F00599A7B /* Images.xcassets */; };
-		73D7F51618EC6C2F00599A7B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F51518EC6C2F00599A7B /* XCTest.framework */; };
 		73D7F51718EC6C2F00599A7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4F618EC6C2F00599A7B /* Foundation.framework */; };
 		73D7F51818EC6C2F00599A7B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F4FA18EC6C2F00599A7B /* UIKit.framework */; };
 		73D7F52018EC6C2F00599A7B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73D7F51E18EC6C2F00599A7B /* InfoPlist.strings */; };
@@ -32,6 +30,7 @@
 		73D7F53818EC6F6F00599A7B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F53718EC6F6F00599A7B /* SystemConfiguration.framework */; };
 		73D7F54C18EC984600599A7B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F54B18EC984600599A7B /* CoreBluetooth.framework */; };
 		73D7F54E18EC987F00599A7B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D7F54D18EC987F00599A7B /* MessageUI.framework */; };
+		AB85896A6E71D65F7D08B7B0 /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C1ECD0D49748D4B6BDF4E2 /* libPods-ROXIMITYSDKStarterKit-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1DEB42F319216657001C7F7F /* libROXIMITYlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYlib.a; sourceTree = "<group>"; };
-		1DEB42F5192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ROXIMITYSDKStarterKit-iOS.a"; path = "Pods/build/Debug-iphoneos/libPods-ROXIMITYSDKStarterKit-iOS.a"; sourceTree = "<group>"; };
-		3610231B32E4426888079BE7 /* libPods-StarterKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarterKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7315E46518FC85730026CCC7 /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
-		7315E46718FC85730026CCC7 /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
-		7315E46818FC85730026CCC7 /* ROXIMITYlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYlib.h; sourceTree = "<group>"; };
-		7315E46918FC85730026CCC7 /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
-		7315E46A18FC85730026CCC7 /* ROXIMITYlib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYlib.bundle; sourceTree = "<group>"; };
+		738E594D19ED7C0500775D7D /* libROXIMITYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYSDK.a; sourceTree = "<group>"; };
+		738E594E19ED7C0500775D7D /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
+		738E595019ED7C0500775D7D /* ROXBeaconRangeUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXBeaconRangeUpdateDelegate.h; sourceTree = "<group>"; };
+		738E595119ED7C0500775D7D /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
+		738E595219ED7C0500775D7D /* ROXIMITYlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYlib.h; sourceTree = "<group>"; };
+		738E595319ED7C0500775D7D /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
+		738E595419ED7C0500775D7D /* ROXIMITYlib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYlib.bundle; sourceTree = "<group>"; };
 		73D7F4F318EC6C2F00599A7B /*  ROXIMITYSDKStarterKit-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " ROXIMITYSDKStarterKit-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7F4F618EC6C2F00599A7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		73D7F4F818EC6C2F00599A7B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,7 +66,6 @@
 		73D7F50C18EC6C2F00599A7B /* ROXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROXViewController.m; sourceTree = "<group>"; };
 		73D7F50E18EC6C2F00599A7B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		73D7F51418EC6C2F00599A7B /*  ROXIMITYSDKStarterKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = " ROXIMITYSDKStarterKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		73D7F51518EC6C2F00599A7B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		73D7F51D18EC6C2F00599A7B /*  ROXIMITYSDKStarterKit-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = " ROXIMITYSDKStarterKit-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		73D7F51F18EC6C2F00599A7B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73D7F52118EC6C2F00599A7B /* StarterKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarterKitTests.m; sourceTree = "<group>"; };
@@ -79,10 +76,9 @@
 		73D7F53718EC6F6F00599A7B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		73D7F54B18EC984600599A7B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		73D7F54D18EC987F00599A7B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		A55AE2B10B9E4BF59C9D78E2 /* Pods-ROXIMITYSDKStarterKit-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROXIMITYSDKStarterKit-iOS.xcconfig"; path = "Pods/Pods-ROXIMITYSDKStarterKit-iOS.xcconfig"; sourceTree = "<group>"; };
-		C3AB14978E5F465EB06B6F7E /* Pods-StarterKit-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterKit-iOS.xcconfig"; path = "Pods/Pods-StarterKit-iOS.xcconfig"; sourceTree = "<group>"; };
+		92B8676BDCDA2A8E80B9C1EB /* Pods-ROXIMITYSDKStarterKit-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROXIMITYSDKStarterKit-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROXIMITYSDKStarterKit-iOS/Pods-ROXIMITYSDKStarterKit-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C0198536FBFF62B313D7D4EF /* Pods-ROXIMITYSDKStarterKit-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROXIMITYSDKStarterKit-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROXIMITYSDKStarterKit-iOS/Pods-ROXIMITYSDKStarterKit-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C6C1ECD0D49748D4B6BDF4E2 /* libPods-ROXIMITYSDKStarterKit-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ROXIMITYSDKStarterKit-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF999EACB14A4F4388CDEEAE /* Pods-StarterKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarterKit.xcconfig"; path = "Pods/Pods-StarterKit.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,18 +86,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DEB42F6192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */,
+				738E595519ED7C0500775D7D /* libROXIMITYSDK.a in Frameworks */,
 				73D7F54E18EC987F00599A7B /* MessageUI.framework in Frameworks */,
 				73D7F54C18EC984600599A7B /* CoreBluetooth.framework in Frameworks */,
 				73D7F53818EC6F6F00599A7B /* SystemConfiguration.framework in Frameworks */,
 				73D7F53618EC6F5C00599A7B /* AdSupport.framework in Frameworks */,
 				73D7F4F718EC6C2F00599A7B /* Foundation.framework in Frameworks */,
 				73D7F53418EC6F4B00599A7B /* CFNetwork.framework in Frameworks */,
-				1DEB42F419216657001C7F7F /* libROXIMITYlib.a in Frameworks */,
 				73D7F53218EC6F4100599A7B /* CoreLocation.framework in Frameworks */,
 				73D7F53018EC6EB600599A7B /* CoreTelephony.framework in Frameworks */,
 				73D7F4F918EC6C2F00599A7B /* CoreGraphics.framework in Frameworks */,
 				73D7F4FB18EC6C2F00599A7B /* UIKit.framework in Frameworks */,
+				AB85896A6E71D65F7D08B7B0 /* libPods-ROXIMITYSDKStarterKit-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +105,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73D7F51618EC6C2F00599A7B /* XCTest.framework in Frameworks */,
 				73D7F51818EC6C2F00599A7B /* UIKit.framework in Frameworks */,
 				73D7F51718EC6C2F00599A7B /* Foundation.framework in Frameworks */,
 			);
@@ -118,14 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7315E46618FC85730026CCC7 /* ROXIMITYlib */ = {
+		482749CA46C62CB189265D75 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7315E46718FC85730026CCC7 /* ROXIMITYEngine.h */,
-				7315E46818FC85730026CCC7 /* ROXIMITYlib.h */,
-				7315E46918FC85730026CCC7 /* ROXNotifications.h */,
+				92B8676BDCDA2A8E80B9C1EB /* Pods-ROXIMITYSDKStarterKit-iOS.debug.xcconfig */,
+				C0198536FBFF62B313D7D4EF /* Pods-ROXIMITYSDKStarterKit-iOS.release.xcconfig */,
 			);
-			path = ROXIMITYlib;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		738E594F19ED7C0500775D7D /* ROXIMITYSDK */ = {
+			isa = PBXGroup;
+			children = (
+				738E595019ED7C0500775D7D /* ROXBeaconRangeUpdateDelegate.h */,
+				738E595119ED7C0500775D7D /* ROXIMITYEngine.h */,
+				738E595219ED7C0500775D7D /* ROXIMITYlib.h */,
+				738E595319ED7C0500775D7D /* ROXNotifications.h */,
+			);
+			path = ROXIMITYSDK;
 			sourceTree = "<group>";
 		};
 		73D7F4EA18EC6C2F00599A7B = {
@@ -135,9 +140,7 @@
 				73D7F51B18EC6C2F00599A7B /* StarterKitTests */,
 				73D7F4F518EC6C2F00599A7B /* Frameworks */,
 				73D7F4F418EC6C2F00599A7B /* Products */,
-				DF999EACB14A4F4388CDEEAE /* Pods-StarterKit.xcconfig */,
-				C3AB14978E5F465EB06B6F7E /* Pods-StarterKit-iOS.xcconfig */,
-				A55AE2B10B9E4BF59C9D78E2 /* Pods-ROXIMITYSDKStarterKit-iOS.xcconfig */,
+				482749CA46C62CB189265D75 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,7 +156,6 @@
 		73D7F4F518EC6C2F00599A7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DEB42F5192166A5001C7F7F /* libPods-ROXIMITYSDKStarterKit-iOS.a */,
 				73D7F54D18EC987F00599A7B /* MessageUI.framework */,
 				73D7F54B18EC984600599A7B /* CoreBluetooth.framework */,
 				73D7F53718EC6F6F00599A7B /* SystemConfiguration.framework */,
@@ -164,8 +166,6 @@
 				73D7F4F618EC6C2F00599A7B /* Foundation.framework */,
 				73D7F4F818EC6C2F00599A7B /* CoreGraphics.framework */,
 				73D7F4FA18EC6C2F00599A7B /* UIKit.framework */,
-				73D7F51518EC6C2F00599A7B /* XCTest.framework */,
-				3610231B32E4426888079BE7 /* libPods-StarterKit-iOS.a */,
 				C6C1ECD0D49748D4B6BDF4E2 /* libPods-ROXIMITYSDKStarterKit-iOS.a */,
 			);
 			name = Frameworks;
@@ -189,10 +189,10 @@
 		73D7F4FD18EC6C2F00599A7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1DEB42F319216657001C7F7F /* libROXIMITYlib.a */,
-				7315E46518FC85730026CCC7 /* roximity.caf */,
-				7315E46618FC85730026CCC7 /* ROXIMITYlib */,
-				7315E46A18FC85730026CCC7 /* ROXIMITYlib.bundle */,
+				738E594D19ED7C0500775D7D /* libROXIMITYSDK.a */,
+				738E594E19ED7C0500775D7D /* roximity.caf */,
+				738E594F19ED7C0500775D7D /* ROXIMITYSDK */,
+				738E595419ED7C0500775D7D /* ROXIMITYlib.bundle */,
 				73D7F4FE18EC6C2F00599A7B /*  ROXIMITYSDKStarterKit-iOS-Info.plist */,
 				73D7F4FF18EC6C2F00599A7B /* InfoPlist.strings */,
 				73D7F50218EC6C2F00599A7B /* main.m */,
@@ -305,9 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				738E595719ED7C0500775D7D /* ROXIMITYlib.bundle in Resources */,
 				73D7F50F18EC6C2F00599A7B /* Images.xcassets in Resources */,
-				7315E46C18FC85730026CCC7 /* roximity.caf in Resources */,
-				7315E46D18FC85730026CCC7 /* ROXIMITYlib.bundle in Resources */,
+				738E595619ED7C0500775D7D /* roximity.caf in Resources */,
 				73D7F50118EC6C2F00599A7B /* InfoPlist.strings in Resources */,
 				73D7F50A18EC6C2F00599A7B /* Main.storyboard in Resources */,
 			);
@@ -351,7 +351,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-ROXIMITYSDKStarterKit-iOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROXIMITYSDKStarterKit-iOS/Pods-ROXIMITYSDKStarterKit-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -429,7 +429,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -469,7 +469,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -490,16 +490,21 @@
 		};
 		73D7F52618EC6C2F00599A7B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A55AE2B10B9E4BF59C9D78E2 /* Pods-ROXIMITYSDKStarterKit-iOS.xcconfig */;
+			baseConfigurationReference = 92B8676BDCDA2A8E80B9C1EB /* Pods-ROXIMITYSDKStarterKit-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StarterKit/ ROXIMITYSDKStarterKit-iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../**",
+				);
 				INFOPLIST_FILE = "StarterKit/ ROXIMITYSDKStarterKit-iOS-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,7 +520,7 @@
 		};
 		73D7F52718EC6C2F00599A7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A55AE2B10B9E4BF59C9D78E2 /* Pods-ROXIMITYSDKStarterKit-iOS.xcconfig */;
+			baseConfigurationReference = C0198536FBFF62B313D7D4EF /* Pods-ROXIMITYSDKStarterKit-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -525,6 +530,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StarterKit/ ROXIMITYSDKStarterKit-iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../**",
+				);
 				INFOPLIST_FILE = "StarterKit/ ROXIMITYSDKStarterKit-iOS-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

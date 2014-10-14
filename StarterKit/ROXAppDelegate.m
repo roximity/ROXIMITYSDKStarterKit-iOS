@@ -16,7 +16,7 @@
     // Override point for customization after application launch.
     
     //Starting the ROXIMITY Engine!
-    [ROXIMITYEngine startWithLaunchOptions:launchOptions andEngineOptions: nil];
+    [ROXIMITYEngine startWithLaunchOptions:launchOptions engineOptions:nil andApplicationId:@"ENTER_YOUR_ROXIMITY_APPLICATION_ID"];
     
     return YES;
 }
@@ -73,11 +73,11 @@
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler{
     [ROXIMITYEngine didReceiveRemoteNotification:application userInfo:userInfo fetchCompletionHandler:completionHandler];
 }
+
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo{
     [ROXIMITYEngine didReceiveRemoteNotification:application userInfo:userInfo];
 }
 
-//TODO: cole the roximity engine should accept a UILocalNotification for this method
 -(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
     [ROXIMITYEngine didReceiveLocalNotification:application notification:(UILocalNotification *)notification];
 }
