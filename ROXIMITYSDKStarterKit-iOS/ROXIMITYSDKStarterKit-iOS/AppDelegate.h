@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  ROXIMITYSDKStarterKit-iOS
+//  StarterKit
 //
-//  Created by dp on 10/15/14.
+//  Created by Cole Richards on 4/2/14.
 //  Copyright (c) 2014 ROXIMITY. All rights reserved.
 //
 
@@ -12,6 +12,4 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
-
