@@ -19,6 +19,7 @@ profile
 *.pbxuser
 *.perspectivev3
 *.orig
+*.xccheckout
 xcuserdata
 
 # Pods
