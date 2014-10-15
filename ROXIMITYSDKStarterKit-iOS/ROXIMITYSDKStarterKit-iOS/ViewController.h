@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ROXIMITYlib.h"
+#import "ROXIMITYSDK.h"
 
 
 @interface ViewController : UIViewController <ROXIMITYEngineDelegate, ROXBeaconRangeUpdateDelegate>

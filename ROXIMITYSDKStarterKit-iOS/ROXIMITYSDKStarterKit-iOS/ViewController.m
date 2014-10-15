@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "ROXIMITYlib.h"
 
 @interface ViewController ()
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ROXIMITYlib.h"
+#import "ROXIMITYSDK.h"
 
 @implementation AppDelegate
 
