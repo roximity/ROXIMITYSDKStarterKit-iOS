@@ -1,8 +1,11 @@
-StarterKit-iOS
+ROXIMITYSDKStarterKit-iOS
 ==============
 
-This project serves as an example of integrating the ROXIMITY SDK into a basic XCode project. This project uses cocoapods to manage dependancies (AFNetworking). To successfully build this project you will first need to install cocoapods and run the 'pod install' command. If you are unfamiliar with cocoapods there is a 'noPods' branch of this project that directly integrates project dependencies. 
+Quick start:
 
-Documentation outlining how this project is setup can be found in the ROXIMITY SDK documentation files [here](http://app.roximity.com/beacons/documentation)
+1.  git clone git@github.com:roximity/ROXIMITYSDKStarterKit-iOS.git
+2.  In the directory you just cloned, run pod install (information on CocoaPods here http://cocoapods.org/)
+3.  Open ROXIMITYSDKStarterKit-iOS.xcworkspace in XCode
+4.  In AppDelegate.m find the "[ROXIMITYEngine start..." call and add your ApplicationId
 
-For questions or problems please contact support@roximity.com
+Full documentation on integration the ROXIMITY SDK can be found here: https://sites.google.com/a/roximity.com/documentation/ios-sdk-latest/latest
