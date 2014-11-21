@@ -194,14 +194,24 @@
 #pragma mark - Metadata
 
 /**
- * @brief Adds a key-value metadata pair to ROXIMITY SDK logs which can later be associated with analytics in the ROXIMITY Dashboard
+ * @brief Adds a key-value metadata pair to ROXIMITY SDK logs which can later be associated with visit analytics in the ROXIMITY Dashboard
  */
 +(void) addVisitMetadata:(NSString *)tag withValue:(NSObject *)value;
 
 /**
- * @brief Adds a dictionary of key-value metadata pairs to ROXIMITY SDK logs which can later be associated with analytics in the ROXIMITY Dashboard
+ * @brief Adds a dictionary of key-value metadata pairs to ROXIMITY SDK logs which can later be associated with visit analytics in the ROXIMITY Dashboard
  */
 +(void) addVisitMetadataDictionary:(NSDictionary *)visitMetadataDictionary;
+
+/**
+ * @brief Adds a key-value metadata pair to ROXIMITY SDK logs which can be used for user targeting in the ROXIMITY Dashboard
+ */
++(void) addRegistrationMetadata:(NSString *)tag withValue:(NSObject *)value;
+
+/**
+ * @brief Adds a dictionary of key-value metadata pair to ROXIMITY SDK logs which can which can be used for user targeting in the ROXIMITY Dashboard
+ */
++(void) addRegistrationMetadataDictionary:(NSDictionary *)registrationMetadataDictionary;
 
 #pragma mark - Convenience Methods
 

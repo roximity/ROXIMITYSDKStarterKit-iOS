@@ -26,7 +26,7 @@ extern NSString * const kROXEngineOptionsUserTargetingLimited;
 
 #pragma mark - Notification Observer Constants
 
-extern NSString * const kROXDeviceStateNotification;
+extern NSString * const kROXStateNotification;
 extern NSString * const kROXRoximityLocalNotification;
 extern NSString * const kROXRoximityPushNotification;
 extern NSString * const kROXRoximityActionNotification;
