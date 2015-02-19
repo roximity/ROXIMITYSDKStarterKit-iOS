@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3727871A9562CE0062EC4A /* AFNetworking_fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3727861A9562CE0062EC4A /* AFNetworking_fat.a */; };
 		1D75712D19EF12BD00676061 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D75712C19EF12BD00676061 /* main.m */; };
 		1D75713019EF12BD00676061 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D75712F19EF12BD00676061 /* AppDelegate.m */; };
 		1D75713319EF12BD00676061 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D75713219EF12BD00676061 /* ViewController.m */; };
@@ -21,7 +22,6 @@
 		1D75715F19EF15F600676061 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D75715C19EF15F600676061 /* CoreBluetooth.framework */; };
 		1D75716019EF15F600676061 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D75715D19EF15F600676061 /* CoreLocation.framework */; };
 		1D75716219EF160700676061 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D75716119EF160700676061 /* CoreTelephony.framework */; };
-		E14A314CCF18FE910B107972 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7E89650976A58C968B18A8 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D3727861A9562CE0062EC4A /* AFNetworking_fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AFNetworking_fat.a; path = ../../../Downloads/AFNetworking_fat.a; sourceTree = "<group>"; };
 		1D75712719EF12BD00676061 /* ROXIMITYSDKStarterKit-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ROXIMITYSDKStarterKit-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D75712B19EF12BD00676061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D75712C19EF12BD00676061 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,7 +74,7 @@
 				1D75715E19EF15F600676061 /* AdSupport.framework in Frameworks */,
 				1D75715F19EF15F600676061 /* CoreBluetooth.framework in Frameworks */,
 				1D75716019EF15F600676061 /* CoreLocation.framework in Frameworks */,
-				E14A314CCF18FE910B107972 /* libPods.a in Frameworks */,
+				1D3727871A9562CE0062EC4A /* AFNetworking_fat.a in Frameworks */,
 				1D75715819EF159000676061 /* libROXIMITYSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +169,7 @@
 		8073728BF32490193AF4D8BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D3727861A9562CE0062EC4A /* AFNetworking_fat.a */,
 				1D75716119EF160700676061 /* CoreTelephony.framework */,
 				1D75715B19EF15F600676061 /* AdSupport.framework */,
 				1D75715C19EF15F600676061 /* CoreBluetooth.framework */,
@@ -193,11 +195,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D75714A19EF12BD00676061 /* Build configuration list for PBXNativeTarget "ROXIMITYSDKStarterKit-iOS" */;
 			buildPhases = (
-				49C7792DCF36306DE54606E4 /* Check Pods Manifest.lock */,
 				1D75712319EF12BD00676061 /* Sources */,
 				1D75712419EF12BD00676061 /* Frameworks */,
 				1D75712519EF12BD00676061 /* Resources */,
-				B9E8B77C8FD16E4EFB3138A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,39 +289,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		49C7792DCF36306DE54606E4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B9E8B77C8FD16E4EFB3138A7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D75712319EF12BD00676061 /* Sources */ = {
@@ -460,6 +427,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ROXIMITYSDKStarterKit-iOS/ROXIMITYSDK",
+					/Users/dannypier/Downloads,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -475,6 +454,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ROXIMITYSDKStarterKit-iOS/ROXIMITYSDK",
+					/Users/dannypier/Downloads,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

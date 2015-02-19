@@ -4,7 +4,4 @@
    <FileRef
       location = "group:ROXIMITYSDKStarterKit-iOS/ROXIMITYSDKStarterKit-iOS.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
 </Workspace>
