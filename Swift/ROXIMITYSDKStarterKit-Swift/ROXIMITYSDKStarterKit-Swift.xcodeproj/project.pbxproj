@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D4514971ABCB0D20074882C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514961ABCB0D20074882C /* AppDelegate.swift */; };
+		1D4514991ABCB0D20074882C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514981ABCB0D20074882C /* ViewController.swift */; };
+		1D45149C1ABCB0D20074882C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D45149A1ABCB0D20074882C /* Main.storyboard */; };
+		1D45149E1ABCB0D20074882C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D45149D1ABCB0D20074882C /* Images.xcassets */; };
+		1D4514A11ABCB0D20074882C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D45149F1ABCB0D20074882C /* LaunchScreen.xib */; };
+		1D4514AD1ABCB0D20074882C /* ROXIMITYSDKStarterKit_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514AC1ABCB0D20074882C /* ROXIMITYSDKStarterKit_SwiftTests.swift */; };
+		1D4514C01ABCB16E0074882C /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4514B71ABCB16E0074882C /* libROXIMITYSDK.a */; };
+		1D4514C11ABCB16E0074882C /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4514B71ABCB16E0074882C /* libROXIMITYSDK.a */; };
+		1D4514C21ABCB16E0074882C /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514B81ABCB16E0074882C /* roximity.caf */; };
+		1D4514C31ABCB16E0074882C /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514B81ABCB16E0074882C /* roximity.caf */; };
+		1D4514C41ABCB16E0074882C /* ROXIMITY_SDK_1_3_179.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514B91ABCB16E0074882C /* ROXIMITY_SDK_1_3_179.zip */; };
+		1D4514C51ABCB16E0074882C /* ROXIMITY_SDK_1_3_179.zip in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514B91ABCB16E0074882C /* ROXIMITY_SDK_1_3_179.zip */; };
+		1D4514C61ABCB16E0074882C /* ROXIMITYSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514BF1ABCB16E0074882C /* ROXIMITYSDK.bundle */; };
+		1D4514C71ABCB16E0074882C /* ROXIMITYSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514BF1ABCB16E0074882C /* ROXIMITYSDK.bundle */; };
+		1D4514F11ABCB1800074882C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514CB1ABCB1800074882C /* AFHTTPRequestOperation.m */; };
+		1D4514F21ABCB1800074882C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514CB1ABCB1800074882C /* AFHTTPRequestOperation.m */; };
+		1D4514F31ABCB1800074882C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514CD1ABCB1800074882C /* AFHTTPRequestOperationManager.m */; };
+		1D4514F41ABCB1800074882C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514CD1ABCB1800074882C /* AFHTTPRequestOperationManager.m */; };
+		1D4514F51ABCB1800074882C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514CF1ABCB1800074882C /* AFHTTPSessionManager.m */; };
+		1D4514F61ABCB1800074882C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514CF1ABCB1800074882C /* AFHTTPSessionManager.m */; };
+		1D4514F71ABCB1800074882C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514D21ABCB1800074882C /* AFNetworkReachabilityManager.m */; };
+		1D4514F81ABCB1800074882C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514D21ABCB1800074882C /* AFNetworkReachabilityManager.m */; };
+		1D4514F91ABCB1800074882C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514D41ABCB1800074882C /* AFSecurityPolicy.m */; };
+		1D4514FA1ABCB1800074882C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514D41ABCB1800074882C /* AFSecurityPolicy.m */; };
+		1D4514FB1ABCB1800074882C /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514D61ABCB1800074882C /* AFURLConnectionOperation.m */; };
+		1D4514FC1ABCB1800074882C /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514D61ABCB1800074882C /* AFURLConnectionOperation.m */; };
+		1D4514FD1ABCB1800074882C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514D81ABCB1800074882C /* AFURLRequestSerialization.m */; };
+		1D4514FE1ABCB1800074882C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514D81ABCB1800074882C /* AFURLRequestSerialization.m */; };
+		1D4514FF1ABCB1800074882C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514DA1ABCB1800074882C /* AFURLResponseSerialization.m */; };
+		1D4515001ABCB1800074882C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514DA1ABCB1800074882C /* AFURLResponseSerialization.m */; };
+		1D4515011ABCB1800074882C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514DC1ABCB1800074882C /* AFURLSessionManager.m */; };
+		1D4515021ABCB1800074882C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514DC1ABCB1800074882C /* AFURLSessionManager.m */; };
+		1D4515031ABCB1800074882C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514DD1ABCB1800074882C /* LICENSE */; };
+		1D4515041ABCB1800074882C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514DD1ABCB1800074882C /* LICENSE */; };
+		1D4515051ABCB1800074882C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514DE1ABCB1800074882C /* README.md */; };
+		1D4515061ABCB1800074882C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514DE1ABCB1800074882C /* README.md */; };
+		1D4515071ABCB1800074882C /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E11ABCB1800074882C /* AFNetworkActivityIndicatorManager.m */; };
+		1D4515081ABCB1800074882C /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E11ABCB1800074882C /* AFNetworkActivityIndicatorManager.m */; };
+		1D4515091ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E31ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.m */; };
+		1D45150A1ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E31ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.m */; };
+		1D45150B1ABCB1800074882C /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E51ABCB1800074882C /* UIAlertView+AFNetworking.m */; };
+		1D45150C1ABCB1800074882C /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E51ABCB1800074882C /* UIAlertView+AFNetworking.m */; };
+		1D45150D1ABCB1800074882C /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E71ABCB1800074882C /* UIButton+AFNetworking.m */; };
+		1D45150E1ABCB1800074882C /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E71ABCB1800074882C /* UIButton+AFNetworking.m */; };
+		1D45150F1ABCB1800074882C /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E91ABCB1800074882C /* UIImageView+AFNetworking.m */; };
+		1D4515101ABCB1800074882C /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514E91ABCB1800074882C /* UIImageView+AFNetworking.m */; };
+		1D4515111ABCB1800074882C /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514EC1ABCB1800074882C /* UIProgressView+AFNetworking.m */; };
+		1D4515121ABCB1800074882C /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514EC1ABCB1800074882C /* UIProgressView+AFNetworking.m */; };
+		1D4515131ABCB1800074882C /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514EE1ABCB1800074882C /* UIRefreshControl+AFNetworking.m */; };
+		1D4515141ABCB1800074882C /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514EE1ABCB1800074882C /* UIRefreshControl+AFNetworking.m */; };
+		1D4515151ABCB1800074882C /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514F01ABCB1800074882C /* UIWebView+AFNetworking.m */; };
+		1D4515161ABCB1800074882C /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514F01ABCB1800074882C /* UIWebView+AFNetworking.m */; };
+		1D4515191ABCB3E70074882C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4515181ABCB3E70074882C /* CoreBluetooth.framework */; };
+		1D45151B1ABCB3F10074882C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D45151A1ABCB3F10074882C /* CoreTelephony.framework */; };
+		1D45151D1ABCB3FB0074882C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D45151C1ABCB3FB0074882C /* AdSupport.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D4514A71ABCB0D20074882C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D4514891ABCB0D20074882C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D4514901ABCB0D20074882C;
+			remoteInfo = "ROXIMITYSDKStarterKit-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D4514911ABCB0D20074882C /* ROXIMITYSDKStarterKit-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ROXIMITYSDKStarterKit-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4514951ABCB0D20074882C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D4514961ABCB0D20074882C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D4514981ABCB0D20074882C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D45149B1ABCB0D20074882C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D45149D1ABCB0D20074882C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1D4514A01ABCB0D20074882C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1D4514A61ABCB0D20074882C /* ROXIMITYSDKStarterKit-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ROXIMITYSDKStarterKit-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4514AB1ABCB0D20074882C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D4514AC1ABCB0D20074882C /* ROXIMITYSDKStarterKit_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROXIMITYSDKStarterKit_SwiftTests.swift; sourceTree = "<group>"; };
+		1D4514B71ABCB16E0074882C /* libROXIMITYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYSDK.a; sourceTree = "<group>"; };
+		1D4514B81ABCB16E0074882C /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
+		1D4514B91ABCB16E0074882C /* ROXIMITY_SDK_1_3_179.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = ROXIMITY_SDK_1_3_179.zip; sourceTree = "<group>"; };
+		1D4514BB1ABCB16E0074882C /* ROXBeaconRangeUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXBeaconRangeUpdateDelegate.h; sourceTree = "<group>"; };
+		1D4514BC1ABCB16E0074882C /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
+		1D4514BD1ABCB16E0074882C /* ROXIMITYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYSDK.h; sourceTree = "<group>"; };
+		1D4514BE1ABCB16E0074882C /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
+		1D4514BF1ABCB16E0074882C /* ROXIMITYSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYSDK.bundle; sourceTree = "<group>"; };
+		1D4514CA1ABCB1800074882C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		1D4514CB1ABCB1800074882C /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		1D4514CC1ABCB1800074882C /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		1D4514CD1ABCB1800074882C /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		1D4514CE1ABCB1800074882C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		1D4514CF1ABCB1800074882C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		1D4514D01ABCB1800074882C /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		1D4514D11ABCB1800074882C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		1D4514D21ABCB1800074882C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		1D4514D31ABCB1800074882C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		1D4514D41ABCB1800074882C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		1D4514D51ABCB1800074882C /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		1D4514D61ABCB1800074882C /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		1D4514D71ABCB1800074882C /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		1D4514D81ABCB1800074882C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		1D4514D91ABCB1800074882C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		1D4514DA1ABCB1800074882C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		1D4514DB1ABCB1800074882C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		1D4514DC1ABCB1800074882C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		1D4514DD1ABCB1800074882C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1D4514DE1ABCB1800074882C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D4514E01ABCB1800074882C /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		1D4514E11ABCB1800074882C /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		1D4514E21ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		1D4514E31ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		1D4514E41ABCB1800074882C /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		1D4514E51ABCB1800074882C /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		1D4514E61ABCB1800074882C /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		1D4514E71ABCB1800074882C /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		1D4514E81ABCB1800074882C /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		1D4514E91ABCB1800074882C /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		1D4514EA1ABCB1800074882C /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		1D4514EB1ABCB1800074882C /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		1D4514EC1ABCB1800074882C /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		1D4514ED1ABCB1800074882C /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		1D4514EE1ABCB1800074882C /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		1D4514EF1ABCB1800074882C /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		1D4514F01ABCB1800074882C /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		1D4515171ABCB2370074882C /* ROXIMITYSDKStarterKit-Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROXIMITYSDKStarterKit-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D4515181ABCB3E70074882C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1D45151A1ABCB3F10074882C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1D45151C1ABCB3FB0074882C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D45148E1ABCB0D20074882C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D45151D1ABCB3FB0074882C /* AdSupport.framework in Frameworks */,
+				1D45151B1ABCB3F10074882C /* CoreTelephony.framework in Frameworks */,
+				1D4515191ABCB3E70074882C /* CoreBluetooth.framework in Frameworks */,
+				1D4514C01ABCB16E0074882C /* libROXIMITYSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4514A31ABCB0D20074882C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4514C11ABCB16E0074882C /* libROXIMITYSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D4514881ABCB0D20074882C = {
+			isa = PBXGroup;
+			children = (
+				1D45151C1ABCB3FB0074882C /* AdSupport.framework */,
+				1D45151A1ABCB3F10074882C /* CoreTelephony.framework */,
+				1D4515181ABCB3E70074882C /* CoreBluetooth.framework */,
+				1D4514931ABCB0D20074882C /* ROXIMITYSDKStarterKit-Swift */,
+				1D4514A91ABCB0D20074882C /* ROXIMITYSDKStarterKit-SwiftTests */,
+				1D4514921ABCB0D20074882C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D4514921ABCB0D20074882C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514911ABCB0D20074882C /* ROXIMITYSDKStarterKit-Swift.app */,
+				1D4514A61ABCB0D20074882C /* ROXIMITYSDKStarterKit-SwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D4514931ABCB0D20074882C /* ROXIMITYSDKStarterKit-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				1D4515171ABCB2370074882C /* ROXIMITYSDKStarterKit-Swift-Bridging-Header.h */,
+				1D4514961ABCB0D20074882C /* AppDelegate.swift */,
+				1D4514981ABCB0D20074882C /* ViewController.swift */,
+				1D45149A1ABCB0D20074882C /* Main.storyboard */,
+				1D45149D1ABCB0D20074882C /* Images.xcassets */,
+				1D45149F1ABCB0D20074882C /* LaunchScreen.xib */,
+				1D4514941ABCB0D20074882C /* Supporting Files */,
+			);
+			path = "ROXIMITYSDKStarterKit-Swift";
+			sourceTree = "<group>";
+		};
+		1D4514941ABCB0D20074882C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514C81ABCB1800074882C /* AFNetworking */,
+				1D4514B61ABCB16E0074882C /* ROXIMITYSDK */,
+				1D4514951ABCB0D20074882C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D4514A91ABCB0D20074882C /* ROXIMITYSDKStarterKit-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514AC1ABCB0D20074882C /* ROXIMITYSDKStarterKit_SwiftTests.swift */,
+				1D4514AA1ABCB0D20074882C /* Supporting Files */,
+			);
+			path = "ROXIMITYSDKStarterKit-SwiftTests";
+			sourceTree = "<group>";
+		};
+		1D4514AA1ABCB0D20074882C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514AB1ABCB0D20074882C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D4514B61ABCB16E0074882C /* ROXIMITYSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514B71ABCB16E0074882C /* libROXIMITYSDK.a */,
+				1D4514B81ABCB16E0074882C /* roximity.caf */,
+				1D4514B91ABCB16E0074882C /* ROXIMITY_SDK_1_3_179.zip */,
+				1D4514BA1ABCB16E0074882C /* ROXIMITYSDK */,
+				1D4514BF1ABCB16E0074882C /* ROXIMITYSDK.bundle */,
+			);
+			path = ROXIMITYSDK;
+			sourceTree = "<group>";
+		};
+		1D4514BA1ABCB16E0074882C /* ROXIMITYSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514BB1ABCB16E0074882C /* ROXBeaconRangeUpdateDelegate.h */,
+				1D4514BC1ABCB16E0074882C /* ROXIMITYEngine.h */,
+				1D4514BD1ABCB16E0074882C /* ROXIMITYSDK.h */,
+				1D4514BE1ABCB16E0074882C /* ROXNotifications.h */,
+			);
+			path = ROXIMITYSDK;
+			sourceTree = "<group>";
+		};
+		1D4514C81ABCB1800074882C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514C91ABCB1800074882C /* AFNetworking */,
+				1D4514DD1ABCB1800074882C /* LICENSE */,
+				1D4514DE1ABCB1800074882C /* README.md */,
+				1D4514DF1ABCB1800074882C /* UIKit+AFNetworking */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		1D4514C91ABCB1800074882C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514CA1ABCB1800074882C /* AFHTTPRequestOperation.h */,
+				1D4514CB1ABCB1800074882C /* AFHTTPRequestOperation.m */,
+				1D4514CC1ABCB1800074882C /* AFHTTPRequestOperationManager.h */,
+				1D4514CD1ABCB1800074882C /* AFHTTPRequestOperationManager.m */,
+				1D4514CE1ABCB1800074882C /* AFHTTPSessionManager.h */,
+				1D4514CF1ABCB1800074882C /* AFHTTPSessionManager.m */,
+				1D4514D01ABCB1800074882C /* AFNetworking.h */,
+				1D4514D11ABCB1800074882C /* AFNetworkReachabilityManager.h */,
+				1D4514D21ABCB1800074882C /* AFNetworkReachabilityManager.m */,
+				1D4514D31ABCB1800074882C /* AFSecurityPolicy.h */,
+				1D4514D41ABCB1800074882C /* AFSecurityPolicy.m */,
+				1D4514D51ABCB1800074882C /* AFURLConnectionOperation.h */,
+				1D4514D61ABCB1800074882C /* AFURLConnectionOperation.m */,
+				1D4514D71ABCB1800074882C /* AFURLRequestSerialization.h */,
+				1D4514D81ABCB1800074882C /* AFURLRequestSerialization.m */,
+				1D4514D91ABCB1800074882C /* AFURLResponseSerialization.h */,
+				1D4514DA1ABCB1800074882C /* AFURLResponseSerialization.m */,
+				1D4514DB1ABCB1800074882C /* AFURLSessionManager.h */,
+				1D4514DC1ABCB1800074882C /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		1D4514DF1ABCB1800074882C /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1D4514E01ABCB1800074882C /* AFNetworkActivityIndicatorManager.h */,
+				1D4514E11ABCB1800074882C /* AFNetworkActivityIndicatorManager.m */,
+				1D4514E21ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.h */,
+				1D4514E31ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.m */,
+				1D4514E41ABCB1800074882C /* UIAlertView+AFNetworking.h */,
+				1D4514E51ABCB1800074882C /* UIAlertView+AFNetworking.m */,
+				1D4514E61ABCB1800074882C /* UIButton+AFNetworking.h */,
+				1D4514E71ABCB1800074882C /* UIButton+AFNetworking.m */,
+				1D4514E81ABCB1800074882C /* UIImageView+AFNetworking.h */,
+				1D4514E91ABCB1800074882C /* UIImageView+AFNetworking.m */,
+				1D4514EA1ABCB1800074882C /* UIKit+AFNetworking.h */,
+				1D4514EB1ABCB1800074882C /* UIProgressView+AFNetworking.h */,
+				1D4514EC1ABCB1800074882C /* UIProgressView+AFNetworking.m */,
+				1D4514ED1ABCB1800074882C /* UIRefreshControl+AFNetworking.h */,
+				1D4514EE1ABCB1800074882C /* UIRefreshControl+AFNetworking.m */,
+				1D4514EF1ABCB1800074882C /* UIWebView+AFNetworking.h */,
+				1D4514F01ABCB1800074882C /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D4514901ABCB0D20074882C /* ROXIMITYSDKStarterKit-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4514B01ABCB0D20074882C /* Build configuration list for PBXNativeTarget "ROXIMITYSDKStarterKit-Swift" */;
+			buildPhases = (
+				1D45148D1ABCB0D20074882C /* Sources */,
+				1D45148E1ABCB0D20074882C /* Frameworks */,
+				1D45148F1ABCB0D20074882C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ROXIMITYSDKStarterKit-Swift";
+			productName = "ROXIMITYSDKStarterKit-Swift";
+			productReference = 1D4514911ABCB0D20074882C /* ROXIMITYSDKStarterKit-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D4514A51ABCB0D20074882C /* ROXIMITYSDKStarterKit-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D4514B31ABCB0D20074882C /* Build configuration list for PBXNativeTarget "ROXIMITYSDKStarterKit-SwiftTests" */;
+			buildPhases = (
+				1D4514A21ABCB0D20074882C /* Sources */,
+				1D4514A31ABCB0D20074882C /* Frameworks */,
+				1D4514A41ABCB0D20074882C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D4514A81ABCB0D20074882C /* PBXTargetDependency */,
+			);
+			name = "ROXIMITYSDKStarterKit-SwiftTests";
+			productName = "ROXIMITYSDKStarterKit-SwiftTests";
+			productReference = 1D4514A61ABCB0D20074882C /* ROXIMITYSDKStarterKit-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D4514891ABCB0D20074882C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = ROXIMITY;
+				TargetAttributes = {
+					1D4514901ABCB0D20074882C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1D4514A51ABCB0D20074882C = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 1D4514901ABCB0D20074882C;
+					};
+				};
+			};
+			buildConfigurationList = 1D45148C1ABCB0D20074882C /* Build configuration list for PBXProject "ROXIMITYSDKStarterKit-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D4514881ABCB0D20074882C;
+			productRefGroup = 1D4514921ABCB0D20074882C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D4514901ABCB0D20074882C /* ROXIMITYSDKStarterKit-Swift */,
+				1D4514A51ABCB0D20074882C /* ROXIMITYSDKStarterKit-SwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D45148F1ABCB0D20074882C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D45149C1ABCB0D20074882C /* Main.storyboard in Resources */,
+				1D4514C61ABCB16E0074882C /* ROXIMITYSDK.bundle in Resources */,
+				1D4514C21ABCB16E0074882C /* roximity.caf in Resources */,
+				1D4515031ABCB1800074882C /* LICENSE in Resources */,
+				1D4514A11ABCB0D20074882C /* LaunchScreen.xib in Resources */,
+				1D45149E1ABCB0D20074882C /* Images.xcassets in Resources */,
+				1D4514C41ABCB16E0074882C /* ROXIMITY_SDK_1_3_179.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4514A41ABCB0D20074882C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4514C31ABCB16E0074882C /* roximity.caf in Resources */,
+				1D4514C71ABCB16E0074882C /* ROXIMITYSDK.bundle in Resources */,
+				1D4515041ABCB1800074882C /* LICENSE in Resources */,
+				1D4514C51ABCB16E0074882C /* ROXIMITY_SDK_1_3_179.zip in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D45148D1ABCB0D20074882C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4514FD1ABCB1800074882C /* AFURLRequestSerialization.m in Sources */,
+				1D45150F1ABCB1800074882C /* UIImageView+AFNetworking.m in Sources */,
+				1D4514FB1ABCB1800074882C /* AFURLConnectionOperation.m in Sources */,
+				1D4514F91ABCB1800074882C /* AFSecurityPolicy.m in Sources */,
+				1D4515111ABCB1800074882C /* UIProgressView+AFNetworking.m in Sources */,
+				1D4514F11ABCB1800074882C /* AFHTTPRequestOperation.m in Sources */,
+				1D4515011ABCB1800074882C /* AFURLSessionManager.m in Sources */,
+				1D4514FF1ABCB1800074882C /* AFURLResponseSerialization.m in Sources */,
+				1D45150D1ABCB1800074882C /* UIButton+AFNetworking.m in Sources */,
+				1D4515091ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				1D4515051ABCB1800074882C /* README.md in Sources */,
+				1D4515131ABCB1800074882C /* UIRefreshControl+AFNetworking.m in Sources */,
+				1D4515151ABCB1800074882C /* UIWebView+AFNetworking.m in Sources */,
+				1D4514991ABCB0D20074882C /* ViewController.swift in Sources */,
+				1D45150B1ABCB1800074882C /* UIAlertView+AFNetworking.m in Sources */,
+				1D4514F51ABCB1800074882C /* AFHTTPSessionManager.m in Sources */,
+				1D4515071ABCB1800074882C /* AFNetworkActivityIndicatorManager.m in Sources */,
+				1D4514F31ABCB1800074882C /* AFHTTPRequestOperationManager.m in Sources */,
+				1D4514F71ABCB1800074882C /* AFNetworkReachabilityManager.m in Sources */,
+				1D4514971ABCB0D20074882C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D4514A21ABCB0D20074882C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D4514FC1ABCB1800074882C /* AFURLConnectionOperation.m in Sources */,
+				1D4515001ABCB1800074882C /* AFURLResponseSerialization.m in Sources */,
+				1D45150C1ABCB1800074882C /* UIAlertView+AFNetworking.m in Sources */,
+				1D4514F21ABCB1800074882C /* AFHTTPRequestOperation.m in Sources */,
+				1D4514AD1ABCB0D20074882C /* ROXIMITYSDKStarterKit_SwiftTests.swift in Sources */,
+				1D4514F81ABCB1800074882C /* AFNetworkReachabilityManager.m in Sources */,
+				1D4515021ABCB1800074882C /* AFURLSessionManager.m in Sources */,
+				1D4514F41ABCB1800074882C /* AFHTTPRequestOperationManager.m in Sources */,
+				1D4515121ABCB1800074882C /* UIProgressView+AFNetworking.m in Sources */,
+				1D4514FA1ABCB1800074882C /* AFSecurityPolicy.m in Sources */,
+				1D4515081ABCB1800074882C /* AFNetworkActivityIndicatorManager.m in Sources */,
+				1D4514F61ABCB1800074882C /* AFHTTPSessionManager.m in Sources */,
+				1D4515101ABCB1800074882C /* UIImageView+AFNetworking.m in Sources */,
+				1D45150E1ABCB1800074882C /* UIButton+AFNetworking.m in Sources */,
+				1D4515141ABCB1800074882C /* UIRefreshControl+AFNetworking.m in Sources */,
+				1D4515161ABCB1800074882C /* UIWebView+AFNetworking.m in Sources */,
+				1D4515061ABCB1800074882C /* README.md in Sources */,
+				1D4514FE1ABCB1800074882C /* AFURLRequestSerialization.m in Sources */,
+				1D45150A1ABCB1800074882C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D4514A81ABCB0D20074882C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D4514901ABCB0D20074882C /* ROXIMITYSDKStarterKit-Swift */;
+			targetProxy = 1D4514A71ABCB0D20074882C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D45149A1ABCB0D20074882C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D45149B1ABCB0D20074882C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D45149F1ABCB0D20074882C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D4514A01ABCB0D20074882C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D4514AE1ABCB0D20074882C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D4514AF1ABCB0D20074882C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D4514B11ABCB0D20074882C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ROXIMITYSDKStarterKit-Swift/ROXIMITYSDK/**",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "ROXIMITYSDKStarterKit-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ROXIMITYSDKStarterKit-Swift/ROXIMITYSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/ROXIMITYSDKStarterKit-Swift/ROXIMITYSDKStarterKit-Swift-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		1D4514B21ABCB0D20074882C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ROXIMITYSDKStarterKit-Swift/ROXIMITYSDK/**",
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "ROXIMITYSDKStarterKit-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ROXIMITYSDKStarterKit-Swift/ROXIMITYSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/ROXIMITYSDKStarterKit-Swift/ROXIMITYSDKStarterKit-Swift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		1D4514B41ABCB0D20074882C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/ROXIMITYSDK/**",
+				);
+				INFOPLIST_FILE = "ROXIMITYSDKStarterKit-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ROXIMITYSDKStarterKit-Swift/ROXIMITYSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROXIMITYSDKStarterKit-Swift.app/ROXIMITYSDKStarterKit-Swift";
+			};
+			name = Debug;
+		};
+		1D4514B51ABCB0D20074882C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/ROXIMITYSDK/**",
+				);
+				INFOPLIST_FILE = "ROXIMITYSDKStarterKit-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ROXIMITYSDKStarterKit-Swift/ROXIMITYSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROXIMITYSDKStarterKit-Swift.app/ROXIMITYSDKStarterKit-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D45148C1ABCB0D20074882C /* Build configuration list for PBXProject "ROXIMITYSDKStarterKit-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4514AE1ABCB0D20074882C /* Debug */,
+				1D4514AF1ABCB0D20074882C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D4514B01ABCB0D20074882C /* Build configuration list for PBXNativeTarget "ROXIMITYSDKStarterKit-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4514B11ABCB0D20074882C /* Debug */,
+				1D4514B21ABCB0D20074882C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D4514B31ABCB0D20074882C /* Build configuration list for PBXNativeTarget "ROXIMITYSDKStarterKit-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D4514B41ABCB0D20074882C /* Debug */,
+				1D4514B51ABCB0D20074882C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D4514891ABCB0D20074882C /* Project object */;
+}
