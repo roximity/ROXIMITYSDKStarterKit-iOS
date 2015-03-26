@@ -6,15 +6,17 @@
 //  Copyright (c) 2013 ROXIMITY. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 #import "ROXBeaconRangeUpdateDelegate.h"
 
 @protocol ROXIMITYEngineDelegate <NSObject>
 
 @optional
--(void) bluetoothStateChange:(BOOL)bluetoothOn;
+-(void) bluetoothRoximityUsable:(BOOL)usable state:(CBCentralManagerState)state;
+-(void) locationRoximityUsable:(BOOL)usable status:(CLAuthorizationStatus)authStatus;
+-(void) notificationsRoximityPermitted:(BOOL)permitted;
 -(void) aliasSetResult:(BOOL)success alias:(NSString *)alias error:(NSError *)error;
 -(void) aliasRemoveResult:(BOOL)success error:(NSError *)error;
 
@@ -33,7 +35,7 @@
  * @warning This method is deprecated, please use startWithLaunchOptions:engineOptions:andApplicationId
  * @see startWithLaunchOptions:engineOptions:andApplicationId
  */
-+(void) startWithLaunchOptions:(NSDictionary *) launchOptions andEngineOptions:(NSDictionary *)engineOptions __attribute__((deprecated("use startWithLaunchOptions:engineOptions:andApplicationId instead")));
++(void) startWithLaunchOptions:(NSDictionary *) launchOptions andEngineOptions:(NSDictionary *)engineOptions __attribute__((deprecated("use startWithLaunchOptions:engineOptions:applicationId:andEngineDelegate instead")));
 
 /**
  * @brief Application delegate item that communicates the application's launch and turns on ROXIMITY API functionality .
@@ -41,7 +43,17 @@
  * @param launchOptions dictionary of launch options to start the ROXIMITY Engine with
  * @param applicationId the application id string corresponding to your application found in the ROXIMITY Web Dashboard
  */
-+(void) startWithLaunchOptions:(NSDictionary *)launchOptions engineOptions:(NSDictionary *)engineOptions andApplicationId:(NSString *)applicationId;
++(void) startWithLaunchOptions:(NSDictionary *)launchOptions engineOptions:(NSDictionary *)engineOptions andApplicationId:(NSString *)applicationId  __attribute__((deprecated("use startWithLaunchOptions:engineOptions:applicationId:andEngineDelegate instead")));
+
+/**
+ * @brief Application delegate item that communicates the application's launch and turns on ROXIMITY API functionality .
+ * @details The startWithLaunchOption method is passed to the ROXIMITYEngine at the start of the application in the didFinishLaunchingWithOptions application delegate hook.
+ * @param launchOptions dictionary of launch options to start the ROXIMITY Engine with
+ * @param applicationId the application id string corresponding to your application found in the ROXIMITY Web Dashboard
+ * @param engineDelegate the ROXIMITY Engine delegate that responds to receive state change alerts
+ */
++(void) startWithLaunchOptions:(NSDictionary *)launchOptions engineOptions:(NSDictionary *)engineOptions applicationId:(NSString *)applicationId andEngineDelegate:(id<ROXIMITYEngineDelegate>)engineDelegate;
+
 /**
  * @brief Application delegate item that communicates that the application is active.
  * @details The active method is passed to the ROXIMITYEngine whenever the application becomes active. A ROXIMITYEngine active call should be placed in the applicationDidBecomeActive delegate hook.
@@ -138,7 +150,7 @@
  * @params userInfo the dictionary accompanying the push notification
  * @params completionHandler the handler of the fetch notification
  */
-+(void) didReceiveRemoteNotification:(UIApplication *)application userInfo:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
++(BOOL) didReceiveRemoteNotification:(UIApplication *)application userInfo:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
 
 /**
  * @brief Notifies ROXIMITY of a push notification
@@ -146,7 +158,7 @@
  * @params application the current application
  * @params userInfo the dictionary accompanying the push notification
  */
-+(void) didReceiveRemoteNotification:(UIApplication *)application userInfo:(NSDictionary *)userInfo;
++(BOOL) didReceiveRemoteNotification:(UIApplication *)application userInfo:(NSDictionary *)userInfo;
 
 /**
  * @brief Notifies ROXIMITY of a local notification notification
@@ -154,7 +166,7 @@
  * @params application the current application
  * @params userInfo the dictionary accompanying the push notification
  */
-+(void) didReceiveLocalNotification:(UIApplication *) application notification:(UILocalNotification *)notification;
++(BOOL) didReceiveLocalNotification:(UIApplication *) application notification:(UILocalNotification *)notification;
 
 #pragma mark - State toggles
 
@@ -234,5 +246,7 @@
  * @returns a NSArray of beacon dictionaries seen in the last n seconds
  */
 +(NSArray *) retrieveBeaconsSeenInLastNSeconds:(int) seconds;
+
++(void) reset;
 
 @end

@@ -22,6 +22,7 @@ extern NSString * const kROXEngineOptionsMuteLocationPermissionAlert;
 extern NSString * const kROXEngineOptionsMuteNotificationPermissionAlert;
 extern NSString * const kROXEngineOptionsStartLocationDeactivated;
 extern NSString * const kROXEngineOptionsDebugLogging;
+extern NSString * const kROXEngineOptionsVerboseLogging;
 extern NSString * const kROXEngineOptionsUserTargetingLimited;
 
 #pragma mark - Notification Observer Constants
