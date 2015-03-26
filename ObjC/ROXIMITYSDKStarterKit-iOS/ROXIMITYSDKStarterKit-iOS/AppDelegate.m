@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ROXIMITYSDK.h"
 
 @implementation AppDelegate
 
@@ -16,7 +15,7 @@
     // Override point for customization after application launch.
     
     //Starting the ROXIMITY Engine!
-    [ROXIMITYEngine startWithLaunchOptions:launchOptions engineOptions:nil andApplicationId:@"ENTER_YOUR_ROXIMITY_APPLICATION_ID"];
+    [ROXIMITYEngine startWithLaunchOptions:launchOptions engineOptions:nil applicationId:@"29a0fe0785ae496ebab9e1d83040c16a" andEngineDelegate:self];
     
     return YES;
 }

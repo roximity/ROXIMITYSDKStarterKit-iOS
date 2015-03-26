@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ROXIMITYSDK.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, ROXIMITYEngineDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
