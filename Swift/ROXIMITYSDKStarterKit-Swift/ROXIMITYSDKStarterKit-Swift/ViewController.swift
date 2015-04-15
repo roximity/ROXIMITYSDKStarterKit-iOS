@@ -52,10 +52,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier:"beaconCell")
-        let cellDict:NSDictionary = self.rangedBeacons.objectAtIndex(indexPath.row) as NSDictionary;
+        let cellDict:NSDictionary = self.rangedBeacons.objectAtIndex(indexPath.row) as! NSDictionary;
         
-        cell.textLabel?.text = cellDict.objectForKey("beacon_name") as NSString;
-        cell.detailTextLabel?.text = cellDict.objectForKey("proximity_string") as NSString;
+        cell.textLabel?.text = cellDict.objectForKey("beacon_name") as! String;
+        cell.detailTextLabel?.text = cellDict.objectForKey("proximity_string") as! String;
         
         return cell
     }
