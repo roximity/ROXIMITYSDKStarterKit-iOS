@@ -10,6 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "ROXBeaconRangeUpdateDelegate.h"
+#import "ROXDeviceHookDelegate.h"
 
 @protocol ROXIMITYEngineDelegate <NSObject>
 
@@ -119,6 +120,13 @@
  * @params interval The update interval with which to return beacon range updates.  Options are fastest, balanced, and power saving with balanced as the default
  */
 +(void) setBeaconRangeDelegate:(id<ROXBeaconRangeUpdateDelegate>)beaconRangeUpdateDelegate withUpdateInterval:(ROXBeaconRangeUpdateInterval)interval;
+
+/**
+ * @brief The delegate that returns updates about beacons currently in range
+ * @description When beacons are discovered in range, the ROXIMITY SDK will invoke the delegate set here with NSDictionary descriptions of those beacons
+ * @params interval The update interval with which to return beacon range updates.  Options are fastest, balanced, and power saving with balanced as the default
+ */
++(void) setDeviceHookDelegate:(id<ROXDeviceHookDelegate>)deviceHookDelegate;
 
 
 #pragma mark - Notification Handlers
