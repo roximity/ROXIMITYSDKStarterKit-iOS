@@ -8,4 +8,4 @@ Quick start:
 3.  Open ROXIMITYSDKStarterKit-iOS.xcworkspace in XCode
 4.  In AppDelegate.m find the "[ROXIMITYEngine start..." call and add your ApplicationId
 
-Full documentation on integrating the ROXIMITY SDK can be found here: https://sites.google.com/a/roximity.com/documentation/ios-sdk-latest/latest
+Full documentation on integrating the ROXIMITY SDK can be found here: https://sites.google.com/a/roximity.com/documentation/ios-sdk
