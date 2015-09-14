@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        ROXIMITYEngine.startWithLaunchOptions(launchOptions, engineOptions: nil, applicationId: "Your application id", andEngineDelegate: nil);
+        ROXIMITYEngine.startWithLaunchOptions(launchOptions, engineOptions: nil, applicationId: "YOUR APPLICATION ID HERE", andEngineDelegate: nil);
         
         
         //ATTENTION: This is new! For beacon notifications to be fired correctly the following settings must be registered with the application.

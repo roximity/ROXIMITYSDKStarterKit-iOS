@@ -13,17 +13,14 @@
 		1D45149E1ABCB0D20074882C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D45149D1ABCB0D20074882C /* Images.xcassets */; };
 		1D4514A11ABCB0D20074882C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D45149F1ABCB0D20074882C /* LaunchScreen.xib */; };
 		1D4514AD1ABCB0D20074882C /* ROXIMITYSDKStarterKit_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4514AC1ABCB0D20074882C /* ROXIMITYSDKStarterKit_SwiftTests.swift */; };
-		1D4514C01ABCB16E0074882C /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4514B71ABCB16E0074882C /* libROXIMITYSDK.a */; };
-		1D4514C11ABCB16E0074882C /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4514B71ABCB16E0074882C /* libROXIMITYSDK.a */; };
-		1D4514C21ABCB16E0074882C /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514B81ABCB16E0074882C /* roximity.caf */; };
-		1D4514C31ABCB16E0074882C /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514B81ABCB16E0074882C /* roximity.caf */; };
-		1D4514C61ABCB16E0074882C /* ROXIMITYSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514BF1ABCB16E0074882C /* ROXIMITYSDK.bundle */; };
-		1D4514C71ABCB16E0074882C /* ROXIMITYSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1D4514BF1ABCB16E0074882C /* ROXIMITYSDK.bundle */; };
 		1D4515191ABCB3E70074882C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4515181ABCB3E70074882C /* CoreBluetooth.framework */; };
 		1D45151B1ABCB3F10074882C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D45151A1ABCB3F10074882C /* CoreTelephony.framework */; };
 		1D45151D1ABCB3FB0074882C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D45151C1ABCB3FB0074882C /* AdSupport.framework */; };
 		1D76F46E1AC4B7A900603FA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D76F46D1AC4B7A900603FA6 /* SystemConfiguration.framework */; };
 		1D76F4701AC4B7B900603FA6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D76F46F1AC4B7B900603FA6 /* MobileCoreServices.framework */; };
+		732510381BA7536D005AE294 /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7325102F1BA7536D005AE294 /* libROXIMITYSDK.a */; };
+		732510391BA7536D005AE294 /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 732510301BA7536D005AE294 /* roximity.caf */; };
+		7325103A1BA7536D005AE294 /* ROXIMITYSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 732510371BA7536D005AE294 /* ROXIMITYSDK.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,19 +44,20 @@
 		1D4514A61ABCB0D20074882C /* ROXIMITYSDKStarterKit-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ROXIMITYSDKStarterKit-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D4514AB1ABCB0D20074882C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4514AC1ABCB0D20074882C /* ROXIMITYSDKStarterKit_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROXIMITYSDKStarterKit_SwiftTests.swift; sourceTree = "<group>"; };
-		1D4514B71ABCB16E0074882C /* libROXIMITYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYSDK.a; sourceTree = "<group>"; };
-		1D4514B81ABCB16E0074882C /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
-		1D4514BB1ABCB16E0074882C /* ROXBeaconRangeUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXBeaconRangeUpdateDelegate.h; sourceTree = "<group>"; };
-		1D4514BC1ABCB16E0074882C /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
-		1D4514BD1ABCB16E0074882C /* ROXIMITYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYSDK.h; sourceTree = "<group>"; };
-		1D4514BE1ABCB16E0074882C /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
-		1D4514BF1ABCB16E0074882C /* ROXIMITYSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYSDK.bundle; sourceTree = "<group>"; };
 		1D4515171ABCB2370074882C /* ROXIMITYSDKStarterKit-Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ROXIMITYSDKStarterKit-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		1D4515181ABCB3E70074882C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		1D45151A1ABCB3F10074882C /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		1D45151C1ABCB3FB0074882C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		1D76F46D1AC4B7A900603FA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1D76F46F1AC4B7B900603FA6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7325102F1BA7536D005AE294 /* libROXIMITYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYSDK.a; sourceTree = "<group>"; };
+		732510301BA7536D005AE294 /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
+		732510321BA7536D005AE294 /* ROXBeaconRangeUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXBeaconRangeUpdateDelegate.h; sourceTree = "<group>"; };
+		732510331BA7536D005AE294 /* ROXDeviceHookDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXDeviceHookDelegate.h; sourceTree = "<group>"; };
+		732510341BA7536D005AE294 /* ROXIMITYEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYEngine.h; sourceTree = "<group>"; };
+		732510351BA7536D005AE294 /* ROXIMITYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYSDK.h; sourceTree = "<group>"; };
+		732510361BA7536D005AE294 /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
+		732510371BA7536D005AE294 /* ROXIMITYSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYSDK.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +66,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D76F4701AC4B7B900603FA6 /* MobileCoreServices.framework in Frameworks */,
+				732510381BA7536D005AE294 /* libROXIMITYSDK.a in Frameworks */,
 				1D76F46E1AC4B7A900603FA6 /* SystemConfiguration.framework in Frameworks */,
 				1D45151D1ABCB3FB0074882C /* AdSupport.framework in Frameworks */,
 				1D45151B1ABCB3F10074882C /* CoreTelephony.framework in Frameworks */,
 				1D4515191ABCB3E70074882C /* CoreBluetooth.framework in Frameworks */,
-				1D4514C01ABCB16E0074882C /* libROXIMITYSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D4514C11ABCB16E0074882C /* libROXIMITYSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,21 +150,22 @@
 		1D4514B61ABCB16E0074882C /* ROXIMITYSDK */ = {
 			isa = PBXGroup;
 			children = (
-				1D4514B71ABCB16E0074882C /* libROXIMITYSDK.a */,
-				1D4514B81ABCB16E0074882C /* roximity.caf */,
-				1D4514BA1ABCB16E0074882C /* ROXIMITYSDK */,
-				1D4514BF1ABCB16E0074882C /* ROXIMITYSDK.bundle */,
+				7325102F1BA7536D005AE294 /* libROXIMITYSDK.a */,
+				732510301BA7536D005AE294 /* roximity.caf */,
+				732510311BA7536D005AE294 /* ROXIMITYSDK */,
+				732510371BA7536D005AE294 /* ROXIMITYSDK.bundle */,
 			);
 			path = ROXIMITYSDK;
 			sourceTree = "<group>";
 		};
-		1D4514BA1ABCB16E0074882C /* ROXIMITYSDK */ = {
+		732510311BA7536D005AE294 /* ROXIMITYSDK */ = {
 			isa = PBXGroup;
 			children = (
-				1D4514BB1ABCB16E0074882C /* ROXBeaconRangeUpdateDelegate.h */,
-				1D4514BC1ABCB16E0074882C /* ROXIMITYEngine.h */,
-				1D4514BD1ABCB16E0074882C /* ROXIMITYSDK.h */,
-				1D4514BE1ABCB16E0074882C /* ROXNotifications.h */,
+				732510321BA7536D005AE294 /* ROXBeaconRangeUpdateDelegate.h */,
+				732510331BA7536D005AE294 /* ROXDeviceHookDelegate.h */,
+				732510341BA7536D005AE294 /* ROXIMITYEngine.h */,
+				732510351BA7536D005AE294 /* ROXIMITYSDK.h */,
+				732510361BA7536D005AE294 /* ROXNotifications.h */,
 			);
 			path = ROXIMITYSDK;
 			sourceTree = "<group>";
@@ -252,9 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7325103A1BA7536D005AE294 /* ROXIMITYSDK.bundle in Resources */,
 				1D45149C1ABCB0D20074882C /* Main.storyboard in Resources */,
-				1D4514C61ABCB16E0074882C /* ROXIMITYSDK.bundle in Resources */,
-				1D4514C21ABCB16E0074882C /* roximity.caf in Resources */,
+				732510391BA7536D005AE294 /* roximity.caf in Resources */,
 				1D4514A11ABCB0D20074882C /* LaunchScreen.xib in Resources */,
 				1D45149E1ABCB0D20074882C /* Images.xcassets in Resources */,
 			);
@@ -264,8 +262,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D4514C31ABCB16E0074882C /* roximity.caf in Resources */,
-				1D4514C71ABCB16E0074882C /* ROXIMITYSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
