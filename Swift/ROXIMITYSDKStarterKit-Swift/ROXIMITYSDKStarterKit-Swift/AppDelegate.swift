@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //ATTENTION: This is new! For beacon notifications to be fired correctly the following settings must be registered with the application.
-        let types:UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound;
+        let types:UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound];
         let appSettings:UIUserNotificationSettings = UIUserNotificationSettings(forTypes:types, categories:nil);
         UIApplication.sharedApplication().registerUserNotificationSettings(appSettings);
         

@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         for (beaconKey, beaconInfo) in userInfo{
-            println(beaconInfo); //checkout the info for each beacon!
+            print(beaconInfo); //checkout the info for each beacon!
             self.rangedBeacons.addObject(beaconInfo);
         }
         self.rangedBeaconsTable?.reloadData();

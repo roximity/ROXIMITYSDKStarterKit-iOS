@@ -18,9 +18,9 @@
 		1D45151D1ABCB3FB0074882C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D45151C1ABCB3FB0074882C /* AdSupport.framework */; };
 		1D76F46E1AC4B7A900603FA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D76F46D1AC4B7A900603FA6 /* SystemConfiguration.framework */; };
 		1D76F4701AC4B7B900603FA6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D76F46F1AC4B7B900603FA6 /* MobileCoreServices.framework */; };
-		732510381BA7536D005AE294 /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7325102F1BA7536D005AE294 /* libROXIMITYSDK.a */; };
 		732510391BA7536D005AE294 /* roximity.caf in Resources */ = {isa = PBXBuildFile; fileRef = 732510301BA7536D005AE294 /* roximity.caf */; };
 		7325103A1BA7536D005AE294 /* ROXIMITYSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 732510371BA7536D005AE294 /* ROXIMITYSDK.bundle */; };
+		737806D81C56C75400E8F3B7 /* libROXIMITYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 737806D71C56C75400E8F3B7 /* libROXIMITYSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 		1D45151C1ABCB3FB0074882C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		1D76F46D1AC4B7A900603FA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1D76F46F1AC4B7B900603FA6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		7325102F1BA7536D005AE294 /* libROXIMITYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYSDK.a; sourceTree = "<group>"; };
 		732510301BA7536D005AE294 /* roximity.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roximity.caf; sourceTree = "<group>"; };
 		732510321BA7536D005AE294 /* ROXBeaconRangeUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXBeaconRangeUpdateDelegate.h; sourceTree = "<group>"; };
 		732510331BA7536D005AE294 /* ROXDeviceHookDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXDeviceHookDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		732510351BA7536D005AE294 /* ROXIMITYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXIMITYSDK.h; sourceTree = "<group>"; };
 		732510361BA7536D005AE294 /* ROXNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROXNotifications.h; sourceTree = "<group>"; };
 		732510371BA7536D005AE294 /* ROXIMITYSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ROXIMITYSDK.bundle; sourceTree = "<group>"; };
+		737806D71C56C75400E8F3B7 /* libROXIMITYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libROXIMITYSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D76F4701AC4B7B900603FA6 /* MobileCoreServices.framework in Frameworks */,
-				732510381BA7536D005AE294 /* libROXIMITYSDK.a in Frameworks */,
+				737806D81C56C75400E8F3B7 /* libROXIMITYSDK.a in Frameworks */,
 				1D76F46E1AC4B7A900603FA6 /* SystemConfiguration.framework in Frameworks */,
 				1D45151D1ABCB3FB0074882C /* AdSupport.framework in Frameworks */,
 				1D45151B1ABCB3F10074882C /* CoreTelephony.framework in Frameworks */,
@@ -150,7 +150,7 @@
 		1D4514B61ABCB16E0074882C /* ROXIMITYSDK */ = {
 			isa = PBXGroup;
 			children = (
-				7325102F1BA7536D005AE294 /* libROXIMITYSDK.a */,
+				737806D71C56C75400E8F3B7 /* libROXIMITYSDK.a */,
 				732510301BA7536D005AE294 /* roximity.caf */,
 				732510311BA7536D005AE294 /* ROXIMITYSDK */,
 				732510371BA7536D005AE294 /* ROXIMITYSDK.bundle */,
@@ -214,6 +214,8 @@
 		1D4514891ABCB0D20074882C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = ROXIMITY;
 				TargetAttributes = {
